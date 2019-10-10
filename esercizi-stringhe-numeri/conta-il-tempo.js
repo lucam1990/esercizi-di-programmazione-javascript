@@ -12,3 +12,14 @@
 
   http://www.imparareaprogrammare.it
 */
+
+
+var time = 12560;
+var secHours = 3600;
+
+var hours = Math.round(time/secHours);
+var secRemaining = time-(secHours*hours);
+var minutes = Math.round(secRemaining/60);
+var second = secRemaining-(minutes*60);
+
+console.log(`${hours} ore, ${minutes} minuti, e ${second} secondi.`);
